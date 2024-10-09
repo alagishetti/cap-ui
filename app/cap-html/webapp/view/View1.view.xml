@@ -1,0 +1,25 @@
+<mvc:View controllerName="nv.com.caphtml.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+    <Page id="page" title="{i18n>title}">
+        <content >
+			<Table id="masterList" growing="true" growingScrollToLoad="true" class="sapFDynamicPageAlignContent" width="auto" mode="SingleSelectMaster"
+				sticky="ColumnHeaders,HeaderToolbar" showSeparators="All" showUnread="true"
+				items="{/ExternalData}">
+				<columns>
+					<Column id="idprnr" minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Partner ID"/>
+					</Column>
+                </columns>
+                <items>
+					<ColumnListItem type="Navigation" >
+						<cells>
+							<Text text="{Name}"/>       
+						</cells>
+					</ColumnListItem>
+				</items>                                     
+                </Table>
+        </content>
+    </Page>
+</mvc:View>

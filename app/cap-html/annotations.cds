@@ -1,0 +1,1 @@
+using ExternalAPIService as service from '../../srv/service';

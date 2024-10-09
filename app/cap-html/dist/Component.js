@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent","sap/ui/Device","nv/com/caphtml/model/models"],function(e,t,i){"use strict";return e.extend("nv.com.caphtml.Component",{metadata:{manifest:"json"},init:function(){e.prototype.init.apply(this,arguments);this.getRouter().initialize();this.setModel(i.createDeviceModel(),"device")}})});
+//# sourceMappingURL=Component.js.map
